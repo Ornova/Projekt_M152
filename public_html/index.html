@@ -22,23 +22,13 @@ and open the template in the editor.
             $(document).ready(function () {
                 $("#flip").click(function () {
                     $("#panel").slideDown("");
-                });
-            });
-            $(document).ready(function () {
-                $("#panel").click(function () {
+                }),
+                        $("#panel").click(function () {
                     $("#panel").slideUp("");
-                });
-            });
-            $(document).ready(function () {
-                $('#some-menu').load('html/navvi.html');
-            });
-
-            $(document).ready(function () {
+                }),
+                        $('#some-menu').load('html/navvi.html');
                 $("#panel").slideDown("fast");
                 $("#panel").slideUp("fast");
-            });
-
-            $(document).ready(function () {
                 $("#flip").slideDown("slow");
                 $("#flip").slideUp("slow");
                 $("#flip").slideDown("slow");
