@@ -1,0 +1,9 @@
+{
+    "name": "Projekt",
+    "main": "public_html/index.html",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Julian Helfenstein",
+    "contributors": [],
+    "dependencies": {}
+}

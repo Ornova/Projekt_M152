@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        <meta name="author" content="Julian">
+        <!--
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/2.0.4/css/bootstrap.css" type="text/css">
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/2.0.4/css/bootstrap-responsive.css" type="text/css"/>
+                <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        -->
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#flip").click(function () {
+                    $("#panel").slideDown("");
+                });
+            });
+            $(document).ready(function () {
+                $("#panel").click(function () {
+                    $("#panel").slideUp("");
+                });
+            });
+            $(document).ready(function () {
+                $('#some-menu').load('html/navvi.html');
+            });
+
+            $(document).ready(function () {
+                $("#panel").slideDown("fast");
+                $("#panel").slideUp("fast");
+            });
+
+            $(document).ready(function () {
+                $("#flip").slideDown("slow");
+                $("#flip").slideUp("slow");
+                $("#flip").slideDown("slow");
+            });
+        </script>
+        <style> 
+            #panel, #flip {padding: 5px;text-align: center;background-color: #f0f0f0;border: solid 1px #c3c3c3;}
+            #panel {padding: 50px;display: none;}
+        </style>
+
+        <title>Shoddy Assembly of Things</title>
+    </head>
+    <body>
+        <header>
+            <div id="flip">TODO write content</div>
+            <div id="panel" class="h_iframe">
+                <iframe src="html/navvi.html" >
+                </iframe>
+            </div>
+        </header>
+
+        <br />
+        <div class="h_iframe">
+            <iframe src="https://www.youtube.com/embed/1DD_NCM_RJs?ecver=2" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div></div>
+
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
